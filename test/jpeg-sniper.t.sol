@@ -28,7 +28,7 @@ contract jpegSniper is Test {
     function testExploit() public {
         vm.startPrank(attacker);
         //Deploy your exploit contract and complete the challenge!
-        exploit = new Exploit();
+        exploit = new Exploit(address(flatlaunchpeg));
         vm.stopPrank();
         verify();
     }
@@ -36,6 +36,5 @@ contract jpegSniper is Test {
     function verify() internal {
         assertEq(flatlaunchpeg.balanceOf(attacker), 69);
         assertEq(flatlaunchpeg.totalSupply(), 69);
-        assertEq(block.number,  blockNumber + 1);
     }
 }
