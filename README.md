@@ -24,7 +24,7 @@ test file: `[CHALLENGE_NAME].t.sol`
 4.run your exploit for a challenge
 
 ```
-forge test --match-contract [TEST_CONTRACT_NAME] -VVV
+forge test --match-contract [TEST_CONTRACT_NAME] -vvv
 ```
 
 more challenge info visit [mrstealyocrypto.xyz](https://mrstealyocrypto.xyz/), if you want to see the solution, check the solution branch.
