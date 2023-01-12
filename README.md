@@ -19,12 +19,12 @@ git submodule update --init --recursive
 
 exploit file: `src/[CHALLENGE_NAM]/Exploit.sol`
 
-test file: `[CHALLENGE_NAM].t.sol` 
+test file: `[CHALLENGE_NAME].t.sol` 
 
 4.run your exploit for a challenge
 
 ```
-forge test --match-contract [TEST_CONTRACT_NAM] -VVV
+forge test --match-contract [TEST_CONTRACT_NAME] -VVV
 ```
 
 more challenge info visit [mrstealyocrypto.xyz](https://mrstealyocrypto.xyz/), if you want to see the solution, check the solution branch.
