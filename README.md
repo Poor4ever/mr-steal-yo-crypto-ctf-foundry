@@ -19,7 +19,7 @@ git submodule update --init --recursive
 
 exploit file: `src/[CHALLENGE_NAM]/Exploit.sol`
 
-test file: `[CHALLENGE_NAME].t.sol` 
+test file: `test/[CHALLENGE_NAME].t.sol` 
 
 4.run your exploit for a challenge
 
