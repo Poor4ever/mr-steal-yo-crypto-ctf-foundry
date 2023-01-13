@@ -27,4 +27,4 @@ test file: `test/[CHALLENGE_NAME].t.sol`
 forge test --match-contract [TEST_CONTRACT_NAME] -vvv
 ```
 
-more challenge info visit [mrstealyocrypto.xyz](https://mrstealyocrypto.xyz/), if you want to see the solution, check the solution branch.
+more challenge info visit [mrstealyocrypto.xyz](https://mrstealyocrypto.xyz/), if you want to see the solution, check the solution [branch](https://github.com/Poor4ever/mr-steal-yo-crypto-ctf-foundry/tree/solution).
