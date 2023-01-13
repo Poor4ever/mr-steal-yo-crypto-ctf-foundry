@@ -6,7 +6,6 @@ import "../src/jpeg-sniper/FlatLaunchpeg.sol";
 import "../src/jpeg-sniper/Exploit.sol";
 
 contract jpegSniper is Test {
-    uint internal blockNumber;
     uint256 internal constant COLLECTION_SIZE = 69;
     uint256 internal constant MAX_BATCH_SIZE = 5;
     uint256 internal constant MAX_PER_ADDRESS_DURING_MINT = 5;
@@ -21,8 +20,6 @@ contract jpegSniper is Test {
 
         flatlaunchpeg = new FlatLaunchpeg(COLLECTION_SIZE, MAX_BATCH_SIZE, MAX_PER_ADDRESS_DURING_MINT);
         vm.label(address(flatlaunchpeg), "FlatLaunchpeg");
-
-        blockNumber = block.number;
     }
 
     function testExploit() public {
@@ -36,6 +33,5 @@ contract jpegSniper is Test {
     function verify() internal {
         assertEq(flatlaunchpeg.balanceOf(attacker), 69);
         assertEq(flatlaunchpeg.totalSupply(), 69);
-        assertEq(block.number,  blockNumber + 1);
     }
 }

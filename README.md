@@ -17,7 +17,7 @@ git submodule update --init --recursive
 
 3.audit challenge codes,check the conditions for completing the challengem, find problems,finally write your exploit
 
-exploit file: `src/[CHALLENGE_NAM]/Exploit.sol`
+exploit file: `src/[CHALLENGE_NAME]/Exploit.sol`
 
 test file: `test/[CHALLENGE_NAME].t.sol` 
 
