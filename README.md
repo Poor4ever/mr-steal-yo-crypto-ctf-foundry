@@ -6,25 +6,25 @@ The [original version](https://github.com/0xToshii/mr-steal-yo-crypto-ctf/tree/i
 
 ## How to Play
 
-1.install [Foundry](https://github.com/foundry-rs/foundry)
+1.Install  [Foundry](https://github.com/foundry-rs/foundry)
 
-2.clone this repon and install dependencies
+2.Clone this repo and install dependencies
 
 ```
-git clone https://github.com/Poor4ever/dmr-steal-yo-crypto-ctf-foundry
+git clone https://github.com/Poor4ever/mr-steal-yo-crypto-ctf-foundry
 git submodule update --init --recursive
 ```
 
-3.audit challenge codes,check the conditions for completing the challengem, find problems,finally write your exploit
+3.Audit challenge codes, check the conditions for completing the challenge, find problems, and then write your exploit
 
 exploit file: `src/[CHALLENGE_NAME]/Exploit.sol`
 
 test file: `test/[CHALLENGE_NAME].t.sol` 
 
-4.run your exploit for a challenge
+4.Run your exploit for a challenge
 
 ```
 forge test --match-contract [TEST_CONTRACT_NAME] -vvv
 ```
 
-more challenge info visit [mrstealyocrypto.xyz](https://mrstealyocrypto.xyz/), if you want to see the solution, check the solution [branch](https://github.com/Poor4ever/mr-steal-yo-crypto-ctf-foundry/tree/solution).
+For more challenge info, visit at mrstealyocrypto.xyz. If you want to see the solution, check the solution [branch](https://github.com/Poor4ever/mr-steal-yo-crypto-ctf-foundry/tree/solution).
