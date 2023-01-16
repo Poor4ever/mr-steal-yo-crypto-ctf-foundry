@@ -72,11 +72,6 @@ contract safuVault is Test {
     }
     
     function testExploit() public {
-        /******************************************
-        *                 INFO                    *
-        *    Verify completion of the challenge   *
-        *******************************************/
-
         vm.startPrank(attacker);
         //Deploy your exploit contract and complete the challenge!
         exploit = new Exploit();
@@ -85,6 +80,11 @@ contract safuVault is Test {
     }
 
     function verify() internal {
+        /******************************************
+        *                 INFO                    *
+        *    Verify completion of the challenge   *
+        *******************************************/
+        
         // attacker drains >= 90% of funds
         uint totalVaultFunds = usdc.balanceOf(address(safuvault)) + usdc.balanceOf(address(safustrategy));
         assertLe(totalVaultFunds, 1000e18); 
