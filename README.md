@@ -1,6 +1,6 @@
 # Mr Steal Yo Crypto CTF(Foundry Version)
 
-The [original version](https://github.com/0xToshii/mr-steal-yo-crypto-ctf/tree/implement) was created using hardhat framework from [@0xToshii](https://twitter.com/0xToshii).
+The [original version](https://github.com/0xToshii/mr-steal-yo-crypto-ctf/tree/implement) was created using from hardhat framework by [@0xToshii](https://twitter.com/0xToshii).
 
 **A set of challenges to learn offensive security of smart contracts.** Featuring interesting challenges loosely (or directly) inspired by real world exploits.
 
