@@ -25,6 +25,7 @@ interface ISafuPair {
         address to, 
         bytes calldata data
     ) external;
+    function transfer(address to, uint256 amount) external returns (bool);
 }
 
 // SafuMakerV2 is SafuSwap's left hand and kinda a wizard. He can cook up SAFU from pretty much anything!

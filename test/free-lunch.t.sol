@@ -85,7 +85,6 @@ contract freeLunch is Test {
         
         safumaker = new SafuMakerV2(address(safufactory), barAddress, address(safu), address(usdc));
 
-
         // adding initial liquidity
         usdc.approve(address(safurouter), CREATE_PAIR_TOKEN_AMOUNT);
         safu.approve(address(safurouter), CREATE_PAIR_TOKEN_AMOUNT);
@@ -104,6 +103,9 @@ contract freeLunch is Test {
         // getting the USDC-SAFU trading pair
         ISafuPair pair = ISafuPair(safufactory.getPair(address(usdc), address(safu)));
 
+        // simulates trading activity, as LP is issued to feeTo address for trading rewards
+        pair.transfer(address(safumaker), 10000e18); // 1% of LP
+        
         vm.label(address(weth), "WETH");
         vm.label(address(usdc), "USDC");
         vm.label(address(safu), "SAFU");
