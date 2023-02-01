@@ -131,8 +131,8 @@ contract freeLunch is Test {
         *******************************************/
         
         // attacker has increased both SAFU and USDC funds by at least 50x
-        assertGt(usdc.balanceOf(attacker), ATTACKER_INIT_TOKEN_AMOUNT * 50);
-        assertGt(safu.balanceOf(attacker), ATTACKER_INIT_TOKEN_AMOUNT * 50);
+        assertGe(usdc.balanceOf(attacker), ATTACKER_INIT_TOKEN_AMOUNT * 50);
+        assertGe(safu.balanceOf(attacker), ATTACKER_INIT_TOKEN_AMOUNT * 50);
     }
 
 }
